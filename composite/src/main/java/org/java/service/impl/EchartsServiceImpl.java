@@ -13,6 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 public class EchartsServiceImpl implements EchartsService {
 	@Autowired
 	private EchartsMapper echartsMapper;
+	/**
+	 * 加载pie图像数据(bar数据也是用的这个方法)
+	 */
 	@Transactional
 	@Override
 	public List<Map<String, Object>> loadPieData() {

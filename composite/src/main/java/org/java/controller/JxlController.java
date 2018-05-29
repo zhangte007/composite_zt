@@ -108,7 +108,11 @@ public class JxlController {
 	public String uploadJxl() {
 		return "/menus/jxl/uploadJxlUi";
 	}
-	
+	/**
+	 * 下载上传jxl模板
+	 * @param response
+	 * @throws Exception
+	 */
 	@RequestMapping("/downloadJxlModel")
 	public void downloadJxlModel(HttpServletResponse response) throws Exception {
 		String fileNname = URLEncoder.encode("工作簿.xls","utf-8");
@@ -135,7 +139,12 @@ public class JxlController {
 		wk.close();
 		os.close();
 	}
-	
+	/**
+	 * 上传jxl保存到数据库
+	 * @param jxlFile
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping("/uploadJxl")
 	public String uploadJxl(@RequestParam("jxlFile") CommonsMultipartFile jxlFile) throws Exception {
 		BufferedInputStream in = new BufferedInputStream(jxlFile.getInputStream());
