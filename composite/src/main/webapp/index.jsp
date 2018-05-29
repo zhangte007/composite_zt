@@ -14,6 +14,7 @@
 		<li><a href="${pageContext.request.contextPath}/manager/fileupload.do">fileupload</a></li>
 		<li><a href="${pageContext.request.contextPath}/manager/jxl.do">jxl</a></li>
 		<li><a href="${pageContext.request.contextPath}/manager/echarts.do">echarts</a></li>
+		<li><a href="${pageContext.request.contextPath}/manager/bootstrap.do">bootstrap</a></li>
 	</ul>
 </body>
 </html>

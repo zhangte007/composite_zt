@@ -49,4 +49,12 @@ public class ManagerController {
 	public String echarts() {
 		return "/menus/manager/echartsMenus";
 	}
+	/**
+	 * 前段页面展示
+	 * @return
+	 */
+	@RequestMapping("/bootstrap")
+	public String bootstrap() {
+		return "/menus/manager/bootstrapMenus";
+	}
 }
