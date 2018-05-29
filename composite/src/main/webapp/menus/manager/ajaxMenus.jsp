@@ -14,7 +14,7 @@
 <body>
 	<h1>ajax Demo</h1>
 	<ul>
-		<li><!-- <a href="/ajax/1/singleton.do">singleton</a> --><a id="singleton" name="1" href='javascript:;'>singleton</a></li>
+		<li><a id="singleton" name="1" href='javascript:;'>singleton</a></li>
 	</ul>
 	
 	

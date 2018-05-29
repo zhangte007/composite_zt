@@ -18,5 +18,9 @@ public class InfoServiceImpl implements InfoService {
 	public List<Map<String, Object>> findAll() {
 		return infoMapper.findAll();
 	}
+	@Override
+	public void addInfos(List<Map<String, Object>> infos) {
+		infoMapper.addInfos(infos);
+	}
 
 }
