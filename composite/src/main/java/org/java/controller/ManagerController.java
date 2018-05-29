@@ -41,5 +41,12 @@ public class ManagerController {
 	public String toJxl() {
 		return "/menus/manager/jxlMenus";
 	}
-	
+	/**
+	 * 图像报表
+	 * @return
+	 */
+	@RequestMapping("/echarts")
+	public String echarts() {
+		return "/menus/manager/echartsMenus";
+	}
 }

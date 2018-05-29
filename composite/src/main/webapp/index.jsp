@@ -13,6 +13,7 @@
 		<li><a href="${pageContext.request.contextPath}/manager/restfull.do">restfull</a></li>
 		<li><a href="${pageContext.request.contextPath}/manager/fileupload.do">fileupload</a></li>
 		<li><a href="${pageContext.request.contextPath}/manager/jxl.do">jxl</a></li>
+		<li><a href="${pageContext.request.contextPath}/manager/echarts.do">echarts</a></li>
 	</ul>
 </body>
 </html>

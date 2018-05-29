@@ -9,7 +9,7 @@
 <script type="text/javascript">
 	var path ="${pageContext.request.contextPath}";
 </script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/menus/ajax/ajaxMenus.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/menus/restfull/restfullMenus.js"></script>
 </head>
 <body>
 	<h1>restfull Demo</h1>

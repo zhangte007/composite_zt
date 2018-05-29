@@ -6,18 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
-<script type="text/javascript">
-	var path ="${pageContext.request.contextPath}";
-</script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/menus/jxl/jxlMenus.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/menus/echarts/echarts.min.js"></script>
+<script type="text/javascript">var path ="${pageContext.request.contextPath}"; </script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/menus/echarts/pieModel.js"></script>
 </head>
 <body>
-	<h1>jxl Demo</h1>
-	<ul>
-		<li><a href='${pageContext.request.contextPath}/jxl/downloadJxl.do'>downloadJxl</a></li>
-		<li><a href='${pageContext.request.contextPath}/jxl/uploadJxlUi.do'>uploadJxlUi</a></li> 
-	</ul>
-	
-	
+	<div id="pie" style="width:900px;height:400px;"></div>
 </body>
 </html>

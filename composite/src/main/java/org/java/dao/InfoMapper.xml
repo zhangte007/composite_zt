@@ -4,4 +4,10 @@
 	<select id="findAll" resultType="map">
 		select *from info
 	</select>
+	<insert id="addInfos" parameterType="list">
+		insert into info values 
+		<foreach collection="list" separator="," item="v">
+			(null,#{v.name},#{v.gender})
+		</foreach>
+	</insert>
 </mapper>
