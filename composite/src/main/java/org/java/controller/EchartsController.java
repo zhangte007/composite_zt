@@ -24,7 +24,10 @@ public class EchartsController {
 	public String pieModel() {
 		return "/menus/echarts/pieModel";
 	}
-	
+	/**
+	 * 显示树桩页面
+	 * @return
+	 */
 	@RequestMapping("/barModel")
 	public String barModel() {
 		return "/menus/echarts/barModel";
