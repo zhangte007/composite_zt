@@ -8,10 +8,11 @@
 </head>
 <body>
 	<h1>首页</h1>
-	<ul>
+	<ul style="list-style-type: none;text-decoration: none">
 		<li><a href="${pageContext.request.contextPath}/manager/ajax.do">ajax</a></li>
 		<li><a href="${pageContext.request.contextPath}/manager/restfull.do">restfull</a></li>
 		<li><a href="${pageContext.request.contextPath}/manager/fileupload.do">fileupload</a></li>
+		<li><a href="${pageContext.request.contextPath}/manager/jxl.do">jxl</a></li>
 	</ul>
 </body>
 </html>
