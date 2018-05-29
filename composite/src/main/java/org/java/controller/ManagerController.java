@@ -32,4 +32,14 @@ public class ManagerController {
 	public String toFileupload() {
 		return "/menus/manager/fileuploadMenus";
 	}
+	
+	/**
+	 * 文件上传下载
+	 * @return
+	 */
+	@RequestMapping("/jxl")
+	public String toJxl() {
+		return "/menus/manager/jxlMenus";
+	}
+	
 }

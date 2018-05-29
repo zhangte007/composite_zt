@@ -4,6 +4,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URLEncoder;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
@@ -46,10 +47,13 @@ public class FileuploadController {
 	 * @param fileNname
 	 * @throws IOException
 	 */
-	@RequestMapping("/{fileNname}/downFile")
-	public void downFile(HttpServletResponse response,@PathVariable String fileNname) throws IOException {
+	@RequestMapping("/{fileName}/downFile")
+	public void downFile(HttpServletResponse response,@PathVariable String fileName) throws IOException {
 		String path = context.getRealPath("/temp");
-		File downFile = new File(path, fileNname);
+		//中文需要转换,这个还没准确测试
+		response.setHeader("Content-disposition", "attachment;fileName="+URLEncoder.encode(fileName,"utf-8"));
+		File downFile = new File(path, fileName);
+		response.setContentType("application/x-msdownload");
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(downFile));
 		byte [] bytes = new byte[2048];//8096
 		int len = 0;
