@@ -62,13 +62,13 @@
 		
 		<div class="row">
 			<div class="col-md-4">
-				<img src="holder.js/212x212" width="100%" alt="" >
+				<img src="holder.js/100px212" alt="" >
 			</div>
 			<div class="col-md-4">
-				<img src="holder.js/212x212" width="100%" alt="" >
+				<img src="holder.js/100px212"  alt="" >
 			</div>
 			<div class="col-md-4">
-				<img src="holder.js/212x212" width="100%" alt="" >
+				<img src="holder.js/100px212"  alt="" >
 			</div>
 		</div>
 		

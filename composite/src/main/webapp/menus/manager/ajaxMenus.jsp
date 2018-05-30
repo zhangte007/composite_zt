@@ -1,22 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/bs/css/bootstrap.min.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/bootstrap.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/holder.min.js"></script>
 <script type="text/javascript">
 	var path ="${pageContext.request.contextPath}";
 </script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/menus/ajax/ajaxMenus.js"></script>
 </head>
 <body>
-	<h1>ajax Demo</h1>
-	<ul>
-		<li><a id="singleton" name="1" href='javascript:;'>singleton</a></li>
-	</ul>
-	
+	<!-- container布局容器,自带居中,一般放在它里面 -->
+	<div class="container">
+		<h1 class="page-header">ajax Demo:</h1>
+		<div class="row">
+			<div class="col-md-2">
+			<button id="singleton" class="btn btn-default btn-block">ajax</button>
+			</div>
+			<div class="col-md-10">
+				<img alt="" src="holder.js/100px300">
+			</div>
+		</div>
+	</div>
 	
 </body>
 </html>
