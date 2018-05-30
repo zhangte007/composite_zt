@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -105,8 +105,62 @@
 					<tr class="danger"><td>001</td><td>002</td><td>003</td><td>003</td><td>003</td><td>001</td><td>002</td><td>003</td><td>003</td><td>003</td></tr>
 				</table>
 		</div>
-		<h1>17、code</h1>
+		<h1>17、按钮</h1>
+		<!-- Standard button -->
+		<button class="btn btn-lg">（默认样式）大</button>
+
+		<button class="btn btn-default btn-sm">（默认样式）Default 中</button>
+		
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<button class="btn btn-primary btn-xs">（首选项）Primary 小</button>
+		
+		<!-- Indicates a successful or positive action -->
+		<button class="btn btn-success">（成功）Success</button>
+		
+		<!-- Contextual button for informational alert messages -->
+		<button class="btn btn-info">（一般信息）Info</button>
+		
+		<!-- Indicates caution should be taken with this action -->
+		<button class="btn btn-warning">（警告）Warning</button>
+		
+		<!-- Indicates a dangerous or potentially negative action -->
+		<button class="btn btn-danger">（危险）Danger</button>
+		
+		<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+		<button class="btn btn-link">（链接）Link</button>
+		<h1 class="page-header">用户个人中心:</h1>
+		<div class="row">
+			<div class="col-md-2">
+			<button class="btn btn-default btn-block">块状按钮</button>
+			<button class="btn btn-default btn-block" disabled>个人信息</button>
+			<button class="btn btn-default btn-block">修改密码</button>
+			<button class="btn btn-default btn-block">待办任务</button>
+			<button class="btn btn-default btn-block">邮件管理</button>
+			<button class="btn btn-default btn-block">系统管理</button>
+			<button class="btn btn-default btn-block">基础数据</button>
+			<a class="btn btn-default btn-block">a连接按钮</a>
+			<form action="">
+			<input type="submit" class="btn btn-default btn-block" value="submit按钮">
+			</form>
+			<input type="reset" class="btn btn-default btn-block" value="reset按钮">
+			<input type="button" class="btn btn-default btn-block" value="button按钮">
 			
+			</div>
+			<div class="col-md-10">
+				<img alt="" src="holder.js/100px300">
+			</div>
+		</div>
+		
+		<h1>18、图片样式</h1>
+		
+		
+		
+		<h1>19、按钮</h1>
+		<h1>20、按钮</h1>
+		<h1>21、按钮</h1>
+		<h1>22、按钮</h1>
+		<h1>23、按钮</h1>
+		
 	</div>
 	
 </body>

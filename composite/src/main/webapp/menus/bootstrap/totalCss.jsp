@@ -11,7 +11,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/holder.min.js"></script>
 <style type="text/css">
 	.container{
-		background-color:#aaa;
 	}
 	.row{
 		margin-bottom:15px;
@@ -20,14 +19,18 @@
 
 </head>
 <body>
-	
 	<!-- container布局容器,自带居中,一般放在它里面 -->
 	<div class="container">
-		<h1><a href="${pageContext.request.contextPath}/bootstrap/gridSystem.do">栅格系统</a></h1>
-		<h1><a href="${pageContext.request.contextPath}/bootstrap/composing.do">排版</a></h1>
-		<h1><a></a></h1>
-		<h1><a></a></h1>
+		<h1 class="page-header">totalCss:</h1>
+		<div class="row">
+			<div class="col-md-2">
+			<button onclick="window.location.href='${pageContext.request.contextPath}/bootstrap/gridSystem.do'" class="btn btn-default btn-block">栅格系统</button>
+			<button onclick="window.location.href='${pageContext.request.contextPath}/bootstrap/composing.do'" class="btn btn-default btn-block">排版</button>
+			</div>
+			<div class="col-md-10">
+				<img alt="" src="holder.js/100px300">
+			</div>
+		</div>
 	</div>
-	
 </body>
 </html>
