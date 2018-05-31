@@ -15,6 +15,15 @@ public class BootStrapController {
 		return "/menus/bootstrap/totalCss";
 	}
 	/**
+	 * to组件模块
+	 * @return
+	 */
+	@RequestMapping("/compnent")
+	public String compnent() {
+		return "/menus/bootstrap/compnent";
+	}
+	
+	/**
 	 * 栅格系统
 	 * @return
 	 */
@@ -29,5 +38,14 @@ public class BootStrapController {
 	@RequestMapping("/composing")
 	public String composing() {
 		return "/menus/bootstrap/totalCss/composing";
+	}
+	
+	/**
+	 * 排版
+	 * @return
+	 */
+	@RequestMapping("/compnentOne")
+	public String compnentOne() {
+		return "/menus/bootstrap/compnent/compnentOne";
 	}
 }

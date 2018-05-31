@@ -1,25 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>bootstrapMenus</title>
+<title>组件</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/bs/css/bootstrap.min.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/bootstrap.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/holder.min.js"></script>
-<!-- 下面这句代码,可以直接检测高宽 -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style type="text/css">
+	.container{
+	}
+	.row{
+		margin-bottom:15px;
+	}
+</style>
+
 </head>
 <body>
-	<!-- container布局容器,自带居中 -->
+	<!-- container布局容器,自带居中,一般放在它里面 -->
 	<div class="container">
-		<h1 class="page-header">bootstrapMenus:</h1>
+		<h1 class="page-header">totalCss:</h1>
 		<div class="row">
 			<div class="col-md-2">
-			<button onclick="window.location.href='${pageContext.request.contextPath}/bootstrap/totalCss.do'" class="btn btn-default btn-block">totalCss</button>
-			<button onclick="window.location.href='${pageContext.request.contextPath}/bootstrap/compnent.do'" class="btn btn-default btn-block">compnent</button>
+			<button onclick="window.location.href='${pageContext.request.contextPath}/bootstrap/compnentOne.do'" class="btn btn-default btn-block">组件</button>
+			<button onclick="window.location.href='${pageContext.request.contextPath}/bootstrap/compnentOne.do'" class="btn btn-default btn-block">组件</button>
 			</div>
 			<div class="col-md-10">
 				<img alt="" src="holder.js/100px300">
