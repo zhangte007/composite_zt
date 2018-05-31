@@ -10,7 +10,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/bootstrap.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/bs/js/holder.min.js"></script>
 <style type="text/css"></style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 	
@@ -152,15 +152,214 @@
 		</div>
 		
 		<h1>18、图片样式</h1>
+		<img src="holder.js/200x200" alt="img-rounded" width="200px" class="img-rounded">
+		<img src="holder.js/200x200" alt="img-circle" width="200px" class="img-circle">
+		<img src="holder.js/200x200" alt="img-thumbnail" width="200px" class="img-thumbnail">
 		
+		<h1>19、辅助类</h1>
+			<p class="page-header">文本颜色</p>
+			<p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="text-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="text-info">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="text-warning">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="text-danger">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			
+			<p class="page-header">背景颜色</p>
+			<p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="bg-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="bg-info">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="bg-warning">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			<p class="bg-danger">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			
+			
+			<p class="page-header">关闭按钮</p>
+			<h2 class="bg-success">Nullam id dolor id nibh ultricies vehicula ut id elit<span class="close">&times;</span></h2>
+			
+			<p class="page-header">三角符号以及浮动</p>
+			<h2 class="bg-success">Nullam id dolor <button class="btn btn-success pull-right"> 更多 <span class="caret"></span></button><span class="close">&times;</span></h2>
+			
+			<p class="page-header">清除浮动</p>
+			<!-- Usage as a class -->
+			<div class="clearfix"></div>
+			
+			
+			<p class="page-header">块标签居中</p>
+			<div class="center-block bg-success" style='width:300px;'>Nullam id dolor id nibh ultricies</div>
 		
+			<p class="page-header">显示隐藏</p>
+			<div class="center-block bg-success show" style='width:300px;'>show</div>
+			<div class="center-block bg-success hide" style='width:300px;'>hide</div>
+			
+		<h1>20、响应式工具</h1>
+			<img alt="" src="${pageContext.request.contextPath}/image/bootstrap/logo.png" class="img-responsive">
 		
-		<h1>19、按钮</h1>
-		<h1>20、按钮</h1>
-		<h1>21、按钮</h1>
-		<h1>22、按钮</h1>
-		<h1>23、按钮</h1>
-		
+		<h1>21、表单</h1>
+		<div class="col-md-12">
+			<form action="">
+				<div class="form-group">
+					<label for="">用户名:</label>
+					<input type="text" class="form-control" placeholder="username">
+				</div>
+				<div class="form-group">
+					<label for="">密码:</label>
+					<input type="text" class="form-control" placeholder="password">
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+						<input type="text" class="form-control">
+						<div class="input-group-addon">.00</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="">爱好:</label>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="">篮球
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="">足球
+						</label>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="">选择题:</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="yzm">篮球
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="yzm">足球
+						</label>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="">文件上传:</label>
+					<input type="file" name="" id="">
+				</div>
+				
+				<div class="form-group">
+					<label for="">留言:</label>
+					<textarea rows="10" cols="30" class="form-control" name="" id=""></textarea>
+				</div>
+				<div class="form-group">
+					<label for="">城市</label>
+					<select name="" id="" class="form-control">
+						<option value="">北京</option>
+						<option value="">武汉</option>
+						<option value="">上海</option>
+						<option value="">广州</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="ok" class="btn btn-success">
+					<input type="reset" value="cancel" class="btn btn-danger">
+				</div>
+				
+			</form>
+			
+			
+			<form action="" class="form-inline">
+				<div class="form-group">
+					<label for="">用户名:</label>
+					<input type="text" class="form-control" placeholder="username">
+				</div>
+				<div class="form-group">
+					<label for="">密码:</label>
+					<input type="text" class="form-control" placeholder="password">
+				</div>
+				<div class="form-group">
+					<input type="submit" value="ok" class="btn btn-success">
+					<input type="reset" value="cancel" class="btn btn-danger">
+				</div>
+			</form>
+			<h2>水平排列的表单</h2>
+			
+			<form action="" class="form-horizontal">
+				<fieldset disabled>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">用户名:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" placeholder="username">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">禁用:</label>
+					<div class="col-sm-10">
+						<input type="text" disabled class="form-control" placeholder="username">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">只读:</label>
+					<div class="col-sm-10">
+						<input type="text" readonly class="form-control" placeholder="username">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">静态字:</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">小金</p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">密码:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" placeholder="password">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-10 col-sm-offset-2">
+					<input type="submit" value="ok" class="btn btn-success">
+					<input type="reset" value="cancel" class="btn btn-danger">
+					</div>
+				</div>
+				</fieldset>
+			</form>
+			
+			<form action="" class="form-horizontal">
+				<div class="form-group has-success has-feedback">
+					<label for="" class="col-sm-2 control-label">用户名:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control input-lg" placeholder="username">
+						<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+						<p class="help-block">提示语言</p>
+					</div>
+				</div>
+				<div class="form-group has-warning has-feedback">
+					<label for="" class="col-sm-2 control-label">密码:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control input-sm" placeholder="password">
+						<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10 col-sm-offset-2">
+					<input type="submit" value="ok" class="btn btn-success">
+					<input type="reset" value="cancel" class="btn btn-danger">
+					</div>
+				</div>
+			</form>
+			
+			
+			
+		</div>
+		<div>
+			<img alt="" src="holder.js/100px1400">
+		</div>
 	</div>
 	
 </body>
