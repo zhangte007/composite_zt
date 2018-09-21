@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/ajax")
 public class AjaxController {
-	
+	/////
 	/**
 	 * ajax简单案例
 	 * @param id
